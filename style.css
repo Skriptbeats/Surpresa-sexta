@@ -1364,3 +1364,401 @@ footer {
     font-size: 0.9em !important;
     opacity: 0.8;
 }
+
+/* ============================================
+   📱 MEDIA QUERIES PARA MOBILE
+   ============================================ */
+@media (max-width: 768px) {
+    /* Contador */
+    .countdown-container {
+        padding: 25px 15px;
+        width: 95%;
+    }
+    
+    .countdown-header h1 {
+        font-size: 1.6em;
+    }
+    
+    .countdown-header p {
+        font-size: 0.95em;
+    }
+    
+    .countdown-timer {
+        gap: 10px;
+    }
+    
+    .time-block {
+        padding: 12px 15px;
+        min-width: 65px;
+    }
+    
+    .time-number {
+        font-size: 2em;
+    }
+    
+    .time-label {
+        font-size: 0.7em;
+        letter-spacing: 1px;
+    }
+    
+    .countdown-message {
+        padding: 15px;
+    }
+    
+    .countdown-message p {
+        font-size: 0.95em;
+    }
+    
+    .skip-btn {
+        padding: 12px 30px;
+        font-size: 1em;
+    }
+    
+    /* Seções gerais */
+    .section-container {
+        padding: 60px 4%;
+    }
+    
+    .section-title {
+        font-size: 1.8em;
+    }
+    
+    .section-subtitle {
+        font-size: 1em;
+        margin-bottom: 40px;
+    }
+    
+    /* Intro Emocional */
+    .intro-title {
+        font-size: 2.2em;
+    }
+    
+    .intro-text {
+        font-size: 1.15em;
+        padding: 0 10px;
+    }
+    
+    .intro-heart {
+        font-size: 3em;
+    }
+    
+    .intro-btn {
+        padding: 15px 35px;
+        font-size: 1.1em;
+    }
+    
+    /* Começo */
+    .begin-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .begin-text h2 {
+        font-size: 1.6em;
+        text-align: center;
+    }
+    
+    .begin-text p {
+        font-size: 1em;
+        text-align: justify;
+    }
+    
+    .quote-box {
+        padding: 20px;
+    }
+    
+    .quote-box p {
+        font-size: 1em;
+    }
+    
+    /* Cards Grid */
+    .love-reasons,
+    .learned-grid,
+    .nostalgia-grid,
+    .playlist-grid,
+    .promises-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .reason-card,
+    .learned-item,
+    .nostalgia-item,
+    .song-card,
+    .promise-card {
+        padding: 20px;
+    }
+    
+    .reason-icon,
+    .learned-icon,
+    .nostalgia-emoji,
+    .song-icon,
+    .promise-icon {
+        font-size: 2.2em;
+    }
+    
+    .reason-card h3,
+    .learned-item h3,
+    .nostalgia-item h3,
+    .song-card h3,
+    .promise-card h3 {
+        font-size: 1.15em;
+    }
+    
+    .reason-card p,
+    .learned-item p,
+    .nostalgia-item p,
+    .song-card p,
+    .promise-card p {
+        font-size: 0.95em;
+    }
+    
+    /* Timeline */
+    .timeline-full::before {
+        left: 20px;
+        width: 3px;
+    }
+    
+    .timeline-item,
+    .timeline-item.reverse {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 50px;
+        justify-content: flex-start;
+    }
+    
+    .timeline-date {
+        position: relative;
+        left: 0;
+        top: 0;
+        transform: none;
+        display: inline-block;
+        margin-bottom: 10px;
+        font-size: 0.85em;
+    }
+    
+    .timeline-content {
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+    }
+    
+    .timeline-text h3 {
+        font-size: 1.15em;
+    }
+    
+    .timeline-text p {
+        font-size: 0.95em;
+    }
+    
+    /* Qualidades Carousel */
+    .qualities-carousel {
+        gap: 15px;
+        padding: 15px 0;
+    }
+    
+    .quality-slide {
+        flex: 0 0 85vw;
+        padding: 20px;
+    }
+    
+    .quality-icon {
+        font-size: 2.2em;
+    }
+    
+    .quality-slide h3 {
+        font-size: 1.15em;
+    }
+    
+    .quality-slide p {
+        font-size: 0.95em;
+    }
+    
+    /* Metas */
+    .goal-item {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+    
+    .goal-icon {
+        margin: 0 0 15px 0;
+    }
+    
+    .goal-content h3 {
+        font-size: 1.1em;
+    }
+    
+    .goal-content p {
+        font-size: 0.9em;
+    }
+    
+    /* Carta */
+    .letter-content {
+        padding: 30px 20px;
+    }
+    
+    .letter-dear {
+        font-size: 1.2em;
+    }
+    
+    .letter-content p {
+        font-size: 1em;
+        line-height: 1.8;
+    }
+    
+    .letter-name {
+        font-size: 1.2em !important;
+    }
+    
+    /* Proposal */
+    .proposal-title {
+        font-size: 1.6em;
+    }
+    
+    .proposal-text {
+        font-size: 1em;
+    }
+    
+    .proposal-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    
+    .btn-yes, .btn-maybe {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+        padding: 15px 25px;
+        font-size: 1.1em;
+    }
+    
+    .celebration-container,
+    .maybe-content {
+        padding: 25px 20px;
+    }
+    
+    .celebration-title {
+        font-size: 1.6em;
+    }
+    
+    .celebration-text {
+        font-size: 1.1em;
+    }
+    
+    /* Fotos */
+    .photo-gallery {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 15px;
+    }
+    
+    .gallery-item {
+        padding: 10px;
+    }
+    
+    /* Agradecimento */
+    .gratitude-content h2 {
+        font-size: 2em;
+    }
+    
+    .gratitude-content p {
+        font-size: 1em;
+    }
+    
+    /* Controle de música */
+    .music-control {
+        width: 45px;
+        height: 45px;
+        top: 15px;
+        right: 15px;
+        font-size: 1.1em;
+    }
+    
+    /* Footer */
+    .footer-message {
+        font-size: 1.1em !important;
+    }
+    
+    .footer-content p {
+        font-size: 0.9em;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Contador ainda menor */
+    .countdown-header h1 {
+        font-size: 1.4em;
+    }
+    
+    .countdown-header p {
+        font-size: 0.9em;
+    }
+    
+    .time-block {
+        padding: 10px 12px;
+        min-width: 55px;
+    }
+    
+    .time-number {
+        font-size: 1.6em;
+    }
+    
+    .time-label {
+        font-size: 0.65em;
+    }
+    
+    /* Intro */
+    .intro-title {
+        font-size: 1.8em;
+    }
+    
+    .intro-text {
+        font-size: 1em;
+    }
+    
+    .intro-heart {
+        font-size: 2.5em;
+    }
+    
+    /* Section Titles */
+    .section-title {
+        font-size: 1.5em;
+    }
+    
+    /* Carta */
+    .letter-content {
+        padding: 25px 15px;
+    }
+    
+    .letter-dear {
+        font-size: 1.1em;
+    }
+    
+    .letter-content p {
+        font-size: 0.95em;
+        line-height: 1.7;
+    }
+    
+    .letter-name {
+        font-size: 1.1em !important;
+    }
+    
+    /* Proposal */
+    .proposal-title {
+        font-size: 1.4em;
+    }
+    
+    .proposal-text {
+        font-size: 0.95em;
+    }
+    
+    .proposal-heart {
+        font-size: 3em;
+    }
+    
+    /* Qualidade slide */
+    .quality-slide {
+        flex: 0 0 90vw;
+    }
+}
