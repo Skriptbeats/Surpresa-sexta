@@ -47,9 +47,9 @@ function startCountdown() {
     // Data do evento: Sexta-feira, 6 de fevereiro de 2026 às 18:00
     const eventDate = new Date('2026-02-06T18:00:00').getTime();
     
-    // Data atual simulada: Sexta-feira, 6 de fevereiro de 2026 às 18:00:01
-    // Para mostrar contador zerado (00 00 00 00)
-    const now = new Date('2026-02-06T18:00:01').getTime();
+    // Data atual simulada: Domingo, 8 de fevereiro de 2026 (após o evento)
+    // Contador mostra 00 00 00 00
+    const now = new Date('2026-02-08T12:00:00').getTime();
     
     function updateCountdown() {
         const distance = eventDate - now;
@@ -67,10 +67,8 @@ function startCountdown() {
             minutesEl.textContent = '00';
             secondsEl.textContent = '00';
             
-            // Após 3 segundos, mostrar conteúdo principal
-            setTimeout(() => {
-                showMainContent();
-            }, 3000);
+            // Manter o contador zerado e o botão "Ver Agora" visível
+            // O usuário clica no botão para ver o conteúdo principal
             return;
         }
         
